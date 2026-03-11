@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashish | Portfolio</title>
+
+  <link rel="stylesheet" href="portfolio.css">
+  <link href="photo1.png"stylesheet">
+</head>
+
+<body>
+
+<header>
+  <h1>Ashish</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <button id="themeToggle" class="theme-btn">🌙</button>
+  </nav>
+</header>
+
+<section id="home">
+  <div class="hero-text">
+    <h2>Hi, I'm <span>Ashish Chauhan</span><br>Web Developer</h2>
+    <p>I build responsive websites using HTML, CSS & JavaScript.</p>
+    <a href="#contact" class="btn">Hire Me</a>
+  </div>
+
+  <div class="hero-img">
+    <img src="photo1.png" alt="profile">
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="title">Skills</h2>
+  <div class="skills">
+    <div class="card">HTML</div>
+    <div class="card">CSS</div>
+    <div class="card">JavaScript</div>
+    <div class="card">React</div>
+  </div>
+</section>
+
+<section id="education">
+  <h2 class="title">Education</h2>
+  <div class="timeline">
+    <div>
+      <h3>B.A Program</h3>
+      <p>School of Open Learning, DU</p>
+    </div>
+    <div>
+      <h3>Web Development Training</h3>
+      <p>HTML, CSS, JavaScript</p>
+    </div>
+  </div>
+</section>
+
+<section id="certificates" class="certificates">
+  <h2 class="title">Certificates</h2>
+  <p class="section-desc">Here are my certifications</p>
+
+  <div class="cert-btn-wrapper">
+    <button class="cert-btn" onclick="openCerts()">
+      🎓 View My Certificates
+    </button>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="title">Projects</h2>
+  <div class="project-content"> 
+    <h3>Mini Projects</h3>
+    <div class="project-links">
+      <a href="todolist/index.html" target="_blank">Todo list</a>
+      <a href="calculator.html" target="_blank">Calculator</a>
+      <a href="bmicalculator.html" target="_blank">BMI</a>
+      <a href="quiz.html" target="_blank">Quiz</a>
+      <a href="cardslider.html" target="_blank">Card Slider</a>
+      <a href="rating.html" target="_blank">Rating</a>
+      <a href="addtocart.html" target="_blank">Add to Cart</a>
+      <a href="landing-page/index.html" target="_blank">landing-page</a>
+      <a href="starbucksclone/home.html" target="_blank">starbucksclone</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="title">Contact Me</h2>
+  <form>
+    <input type="text" placeholder="Name">
+    <input type="email" placeholder="Email">
+    <textarea rows="5" placeholder="Message"></textarea>
+    <button class="btn">Send</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Ashish Chauhan</p>
+</footer>
+
+<!-- CERTIFICATE MODAL -->
+<div id="certModal" class="modal">
+  <span class="close" onclick="closeCerts()">&times;</span>
+
+  <button class="nav prev" onclick="prevCert()">❮</button>
+
+  <img id="certImg" src="certificates/cert1.jpg" alt="Certificate">
+
+  <button class="nav next" onclick="nextCert()">❯</button>
+</div>
+
+<script src="portfolio.js"></script>
+</body>
+  </html>
