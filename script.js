@@ -73,6 +73,7 @@ nextCert();
 
 const text = ["Web Developer", "Frontend Developer", "JavaScript Developer"];
 
+
 let count = 0;
 let index = 0;
 let currentText = "";
@@ -100,5 +101,5 @@ setTimeout(type, 1200);
 else {
 setTimeout(type, 120);
 }
-
 }
+type();
