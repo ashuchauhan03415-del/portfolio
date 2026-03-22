@@ -156,6 +156,7 @@ cursor:pointer;
 section{
 padding:120px 60px;
 min-height:100vh;
+scroll-margin-top: 100px;
 }
 
 .title{
@@ -245,6 +246,10 @@ box-shadow:0 0 35px rgba(255,77,77,0.7);
 
 .skill p i {
   font-size: 18px;
+}
+
+html{
+  scroll-behavior:smooth;
 }
 
 /* Individual colors */
